@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ЖоХн</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/a-style.css">
 </head>
 <body>
+    <script src="script.js"></script>
+    <div id="menu">
+        <a href=""><span>BLOG</span></a>
+        <a href=""><span>WORKS</span></a>
+        <a href=""><span>CONTACT</span></a>
+        <div onclick = "Menu_hide()"><span>BACK</span></div>
+    </div>
     <main>
         <header>
             <ul>
@@ -18,6 +25,11 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <div id="menu-strips" onclick = "Menu_show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </header>     
                  
         <div class="container">
@@ -32,6 +44,84 @@
                 </div>
             </div>
         </div>
+        <div class="space"></div>
+        <div class="container blue-bg" >
+            <div class="content">
+                <div class="content-top">
+                    <p>Recent posts</p>
+                    <a href="">View all</a>
+                </div>
+                <div class="content-right w418 white-bg padding-1">
+                    <h2>Making a design system from scratch</h2>
+                    <div class="description">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Design, Pattern</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="content-right w418 white-bg padding-1">
+                    <h2>Creating pixel perfect icons in Figma</h2>
+                    <div class="description">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Design, Pattern</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" >
+            <div class="content">
+                <div class="content-top">
+                    <p>Featured works</p>
+                </div>
+                <div id="p_0" class="content-box">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="left-box">
+                        <h2>Designing Dashboards</h2>
+                        <div class="date-box">
+                            <div class="date">2020</div>
+                            Dashboard
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+                <div id="p_1" class="content-box">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="left-box">
+                        <h2>Vibrant Portraits of 2020</h2>
+                        <div class="date-box">
+                            <div class="date">2018</div>
+                            Illustration
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+                <div id="p_2" class="content-box">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="left-box">
+                        <h2>36 Days of Malayalam type</h2>
+                        <div class="date-box">
+                            <div class="date">2018</div>
+                            Dashboard
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-icons">
+                <a href="https://vk.com"><img src="svg/vk.svg" alt=""></a>
+                <a href="https://ok.ru"><img src="svg/ok.svg" alt=""></a>
+                <a href="https://telegram.org"><img src="svg/telegram.svg" alt=""></a>
+            </div>
+            <p>Copyright ©2020 All rights reserved </p>
+        </footer>
     </main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px)
+@media screen and (max-width: 900px)
 {
     *{
         font-family: 'Heebo', sans-serif;
@@ -14,62 +14,44 @@
         --primary-color: #FF6464;
         --secondary-color: #00A8CC;
     }
-    #menu{display: none;}
+
+    h1{font-weight: bold; text-align: center; font-size: 2rem; color: var(--main-color);}
+    h2 {color: var(--main-color); font-size: 1.375rem; font-weight: bold;}  
+    p{font-size: 1rem; margin: 0; padding: 0; color: var(--main-color);}
+    a{text-decoration: none; color:var(--main-color);}
+    
+    #menu
+    {
+        position: fixed;
+        z-index: 1;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        width: 100%;
+        height: 100%;
+        opacity: 90%;
+    }
+
+    #menu a span {font-size: 1.5rem; margin-bottom: 2rem;}
+    #menu div span {font-size: 1.5rem; margin-bottom: 2rem; cursor: pointer; color: var(--primary-color);}
+
     header
     {
-        width: 860px;
-        margin: 0 auto;
-        
+        width: 100%;
+        margin: 0 auto;       
         display: flex;
         justify-content: flex-end;
         height: 80px;
         background: #ffffff;
     }
     
-    header ul
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        width: 300px;
-    }
-    
-    header ul li a
-    {
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1.25rem;
-        color: black;
-    }
+    #menu-strips {display: flex; flex-direction: column; margin: 1rem 2rem 0 0; cursor: pointer;}
+    #menu-strips span {background-color: grey; min-height: 0.2rem; min-width: 2rem; margin-top:0.4rem;}
 
-    .menu-strips {display: none;}
-    
-    h1
-    {
-        font-weight: bold; font-size: 3rem; color: var(--main-color);
-    }
-    h2 {color: var(--main-color); font-size: 1.875rem; font-weight: bold;}
-    
-    p
-    {
-        font-size: 1rem;
-        margin: 0;
-        padding: 0;
-        color: var(--main-color);
-    }
-    
-    button
-    {
-        width: 200px;
-        height: 50px;
-        font-weight: 500;
-        background-color: var(--primary-color);
-        color: white;
-        border: 0;
-        font-size: 1.25rem;
-    }
-    
+    header ul{display: none;}   
+
     .container
     {
         display: flex;
@@ -80,9 +62,9 @@
     
     .content
     {
-        width: 860px;
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         min-height: 300px;
         align-items: center;
@@ -92,27 +74,45 @@
     .content-left
     {
         display: flex;
+        order: 2;
         flex-direction: column;
-        justify-content: space-between;
+        
+        align-items: center;
         width: 60%;
         min-height: 300px;
     
     }
+
+    .content-left button
+    {
+        margin-top: 2rem;
+        width: 200px;
+        height: 50px;
+        font-size: 1.25rem;
+        font-weight: medium;
+        background-color: var(--primary-color);
+        color: white;
+        border: 0;
+        
+    }
+
+    .content-left p {text-align: center;}
     
     .content-right
     {
         display: flex;
+        order:1;
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        margin-bottom: 1.5rem;  
+        margin-bottom: 2rem;  
     }
     .content-right > * {margin-bottom: 1rem;}
-    .content-right img {max-height: 243px;}
+    .content-right img {max-height: 170px;}
     .content-right .description {display: flex; flex-direction: row;}
     .content-right .description span {margin-right: 1rem;}
     
-    .w418{width: 418px;}
+    .w418{width: 70%;}
     .white-bg{background-color: white;}
     .padding-1{padding: 1rem;}
     
@@ -121,16 +121,12 @@
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
     }
-    .content-top a
-    {
-        text-decoration: none;
-        color: var(--secondary-color);
-    }
+    .content-top a {display: none;}
     .content-top p {font-size: 1.375rem;}
-    
+
     .content .content-right img
     {
         filter: drop-shadow(0px -15px 0px #edf7fa);   
@@ -140,20 +136,19 @@
     {
         background-color: #EDF7FA;
     }
-    .space
-    {height: 4rem}
+    .space{height: 4rem}
+
     .content-box
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
-        border-bottom: 1px solid #E0E0E0;
         min-height: 100px;
-        width:100%;
+        width:70%;
         padding-bottom: 2rem;
         margin-bottom: 2rem;
     }
-    .content-box img {width: 246px; border-radius: 10px; }
+    .content-box img {width: 100%; border-radius: 10px;}
     .content-box .left-box
     {
         display: flex;
@@ -161,18 +156,19 @@
         flex-direction: column;
         padding-left: 1rem;
     }
+    .content-box .left-box h2 {margin-top: 1rem;}
+
     .date-box
-    {display: flex; flex-wrap: nowrap; font-size: 1.25rem; color: #8695A4; align-items: center; margin: 1rem 0 1rem 0;
-    }
+    {display: flex; flex-wrap: nowrap; font-size: 1rem; color: #8695A4; align-items: center; margin: 1rem 0 1rem 0;}
     .date-box .date
     {
-    background-color:#142850; color:white; width:fit-content; font-size: 1.125rem; font-weight: bold; padding: 0rem 1rem 0rem 1rem; margin-right: 1rem;
+    background-color:#142850; color:white; width:fit-content; font-size: 1rem; font-weight: bold; padding: 0rem 1rem 0rem 1rem; margin-right: 1rem;
     border-radius: 50px;
     }
     
     footer
     {
-        margin-top: 6rem;
+        margin-top: 4rem;
         margin-bottom: 3rem;
         display: flex;
         flex-wrap: wrap;
@@ -187,9 +183,13 @@
     }
     .footer-icons a img
     {
-        width: 40px;
+        width: 1.875rem;
         margin: 0 0.8rem 0 0.8rem;
     }
-    footer p {margin-top: 1.5rem; font-size: 0.875rem;}
+    footer p {margin-top: 1.5rem; font-size: 0.875rem; text-align: center;}
+
+    #p_1 {display: none;}
+    #p_2 {display: none;}
 }
+
 
