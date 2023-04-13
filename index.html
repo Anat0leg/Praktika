@@ -2,36 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/a-style.css">
+    <title>Anatoleg</title>
 </head>
 <body>
+    <script src="script.js"></script>
+    <div id="menu">
+        <a href="#id1">ОБО МНЕ</a>
+        <a href="#id2">ПРИМЕРЫ РАБОТ</a>
+        <a href="#id3">УСЛУГИ</a>
+        <a href="#id4">ТОВАРЫ</a>
+        <a href="#id5">КОНТАКТЫ</a>
+        <p onclick="Menu_hide()">x</p>
+    </div>
+    <header>
+        <div class="content" id="CoNtEnT">
+            <div onclick="Menu_show()" id="strips_box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>ANATOLEG</h1>
+            <div class="strips_box">
+            </div>
+        </div>
+    </header>
     <main>
-        <header>
-            <ul>
-                <li><a href="">Works</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </header>     
-                 
-        <div class="container">
+        <div class="preview-images">
+            <img src="images/pre1.png" alt="">
+        </div>
+
+        <div class="about-me" id="id1">
+            <h2>ОБО МНЕ</h2>
             <div class="content">
-                <div class="content-left">
-                    <h1>Hi, I am John,<br> Creative Technologist</h1>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button>Download Resume</button>
+                <img src="images/me.png" alt="">
+                <div class="text">
+                    <p>Доброго времени суток, мой дорогой друг, я занимаюсь различного рода творчеством, в частности, создаю разнобразные изображения и иллюстрации</p>
+                    <p>Творчеством занимаюсь уже более 10 лет, помимо рисования, также имею опыт в фотографии и видеосьёмке, а также в написании небольших рассказов.</p>
+                    <p>Кроме тех работ, которые я делаю исключительно для себя, я также готов творить и для других людей, причём в разнообразных направлениях творческой деятельности (иллюстрации, картинки и прочие подобные вещи), без конкретных ограничений по жанру и содержанию</p>
                 </div>
-                <div class="content-right">
-                    <img src="images/pic1.png" alt="">
+            </div>           
+        </div>
+
+        <div class="works-ref" id="id2">
+            <h2>ПРИМЕРЫ РАБОТ</h2>
+            <div class="content">
+                <img src="images/ref1.png" alt="">
+                <img src="images/ref2.png" alt="">
+                <img src="images/ref3.png" alt="">
+            </div>
+        </div>
+
+        <div class="skills" id="id3">
+            <h2>УСЛУГИ</h2>
+            <div class="content">
+                <p>Готов обсудть что вам требуется и выполнить любую работу в предложенных категориях, в соответствии с вашими желаниями</p>
+                <div class="rounded-container">Создание цифровых иллюстрацaий и картинок</div>
+                <div class="rounded-container">Создание физических изображений на бумаге и других материалах как различными красками, так и другими инструментами</div>
+                <div class="rounded-container">Редактирование готовых изображений (фотографии, иллюстрации и прочее) с целью изменения их внешнего вида, коррекции недостатков и/или улучшения качества</div>
+                <div class="rounded-container">Другая творческая деятельность: лепка, написание рассказов, сценариев, историй, монтаж и редактирование видеороликов, озвучка и т.п.</div>
+                <p class="cursive">Стоимость работ обсуждается в индивидуальном порядке и начинается от 300 рублей</p>
+            </div>
+        </div>
+
+        <div class="goods" id="id4">
+            <h2>ТОВАРЫ</h2>
+            <div class="content">
+                <div class="goods-header">
+                    <div>
+                        <div id="goods-dublicate">ДУБЛИРУЕМЫЕ</div>
+                        <div id="goods-uniq">УНИКАЛЬНЫЕ</div>
+                    </div>
+                    <div id="goods-sort">СОРТИРОВКА</div>
+                </div>
+                <div class="goods-box">
+                    <div class="item">
+                        <img src="images/стикеры.png" alt="">
+                        <span class="price">350₽</span>
+                        <p>Набор наклеек Anatoleg 2023</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/кот 2.png" alt="">
+                        <span class="price">200₽</span>
+                        <p>Наклейка "КОТ" 30х30</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/фотографии.png" alt="">
+                        <span class="price">999₽</span>
+                        <p>Коллекция авторских фотокарточек 20шт.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/зажигалка.png" alt="">
+                        <span class="price">350₽</span>
+                        <p>Зажигалка с подписью Anatoleg</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/стикеры.png" alt="">
+                        <span class="price">350₽</span>
+                        <p>Набор наклеек Anatoleg 2023</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/стикеры.png" alt="">
+                        <span class="price">350₽</span>
+                        <p>Набор наклеек Anatoleg 2023</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="contacts" id="id5">
+            <h2>КОНТАКТЫ</h2>
+            <div class="content">
+                <div class="info-box">
+                    <a href="https://vk.com/anatoleg_art">
+                        <div class="left">
+                            <img src="svg/vk-logo.svg" alt="">
+                            <div class="text">
+                                <p><b>Группа в ВК</b></p>
+                                <p>В сообществе в ВК можно увидеть больше примеров работ а также сделать заказ работы и обсудить все его детали (тык)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="right">
+                        <img src="svg/anatoleg-vk-QR.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <a href="https://youtube.com/@Anatoleg">
+                        <div class="left">
+                            <img src="svg/YT-logo.svg" alt="">
+                            <div class="text">
+                                <p><b>Канал на YouTube</b></p>
+                                <p>На YouTube канале можно посмотреть на процесс создания некоторых работ, а также увидеть другие интересные мои видео</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="right">
+                        <img src="svg/anatoleg-YT-QR.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <a href="https://twitter.com/Anat0leg">
+                        <div class="left">
+                            <img src="svg/twtr-logo.svg" alt="">
+                            <div class="text">
+                                <p><b>Twitter</b></p>
+                                <p>По содержанию похоже на мою группу в ВК, но целевая аудитория немного другая</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="right">
+                        <img src="svg/anatoleg-twtr-QR.svg" alt="">
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+        <!--
+        <div class="gallery">
+           <div class="content">
+                <img src="" alt="">
+                <span></span>
+                <span></span>
+                <div class="image-set">
+                </div>
+           </div>     
+        </div>
+        -->
+        <footer>
+            <div class="content">
+                <div class="icons">
+                    <a href="https://vk.com/anatoleg_art"><img src="svg/vk-logo-white.svg" alt=""></a>
+                    <a href="https://youtube.com/@anatoleg"><img src="svg/YT-logo-white.svg" alt=""></a>
+                    <a href="https://twitter.com/anat0leg"><img src="svg/twtr-logo-white.svg" alt=""></a>
+                    <a href="https://sun9-48.userapi.com/impg/UQPseZwCb964tx7abhkVFBI1lpfgNPH10Zb6aA/VerDPnE0BGM.jpg?size=1920x639&quality=96&sign=e7db64bff8ea5dda9f014b323850b5a3&type=album"><img src="svg/tg-logo-white.svg" alt=""></a>
+                </div>
+                <p>Anatoleg</p>
+                <p>2023</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
