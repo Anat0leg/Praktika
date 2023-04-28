@@ -1,21 +1,208 @@
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1400px)
 {
-    *{
-        font-family: sans-serif;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    
+    h1 {font-size: 9rem;}
+    
+    header {width: 100%;}
+    header .top
+    {
+        background-color: #1A1919;
+        width: 100%;
+        height: 1.875rem;
+        display: flex;
+        font-size: 0.875rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5rem 0 5rem;
+    }
+    header > .top > .left {display: none;}
+    header > .top > .right {display: none;}
+    header .top .left-mobile a, header .top .right a
+    {
+        color: white;
+        text-decoration: none;
+        
+    }
+    header .top .left-mobile a {margin-right: 2rem;}
+    header .top .left-mobile a img, header .top .right a img  {margin-right: 1rem; width: 1rem;}
+
+    header > .middle 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4.375rem;
+        background-color: #F0F0F0;
+        padding: 0 5rem 0 5rem;
+    }
+
+    header > .middle > img {width: 23.1875rem;}
+
+    header .middle .search-field{display: none;}
+
+    .login-button {display: none;}
+
+    header .middle .search-field span {font-size: 1.125rem; font-weight: 100; color: #525252;}
+    header .middle .buttons-field {display:flex; width: 8.1875rem; justify-content: flex-end;}
+    header .middle .buttons-field > * {margin-left: 1rem; text-decoration: none; color:#1A1919}
+    header .middle .buttons-field a {font-size: 0.75rem; font-weight: 500;}
+    header .middle .buttons-field a img {height: 1.875rem;}
+
+    header > .bottom
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 6.25rem;
+        padding: 0 5rem 0 5rem;
+        
+    }
+    header .bottom > * > * {font-family: 'Roboto', sans-serif;}
+    
+    header > .bottom .left {width: 23.1875rem; display: flex; justify-content: flex-start;}
+    header > .bottom .left > * {margin-right: 1.5rem;}
+    header > .bottom .right {width: 23.1875rem; display: flex; justify-content: space-between;}
+    header a {text-decoration: none; color: black;}
+    header > .bottom .middle
+    {
+        width: 37.5rem;
+        display: none;
+        justify-content: space-between;
+    }
+    .mobile-stories
+    {
+        display: flex; flex-direction: column;
+        width: 100%; margin-left: 7%;
+    }
+    .mobile-stories > * {margin-bottom: 1rem;}
+    .stories-images
+    {
+        display: flex;
+    }
+    .stories-images img {width: 24%; margin-right: 1rem;} 
+
+    .video-box
+    {
+        display: none;
+    }
+
+    .separation
+    {
+        display: none;   
+    }
+
+    .sales {width: 100%; display: flex; justify-content: space-between; margin-bottom: 3.125rem;}
+    .big-sale 
+    {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width:42rem; 
+        height:18.75rem;
+        text-align: center;
+        background-color: #D3D3D3;
+        padding: 0.625rem;
+        
+    }
+
+    .big-sale > .box
+    {
+        background-color: #525252; width: 100%; height: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .big-sale h1 {color: #FFFFFF;}
+    .big-sale p {font-size: 2.25rem; color: #FFFFFF;}
+
+    .sale {width: 12.5rem; display: flex; align-items: flex-end;}   
+    
+    .sale:hover .sale-info {opacity: 1; transition: 0.5s;}
+    
+    .sale .sale-info 
+    {
+        opacity:0;
+        transition: 0.5s;
+        flex-direction: column;
+        background-color: #525252c5;
+        padding: 1rem;
+        position: absolute;
+        width: 12.5rem;
     }
     
-    :root
-    {
-        font-size: 16px;
-        --first-color: #222222;
-        --first-first-color: #494949;
-        --second-color:#141414;
-        --third-color: #DF6DE1;
-        --third-third-color: #A87FA9;
+    .sale > .sale-info > * {color: white;}
+    .sale > .sale-info > p {width: 100%; display: flex; justify-content: space-between; font-size: 0.875rem;}
+    .sale > .sale-info > h2 {font-size: 1.5rem; font-weight: bold;}
 
+    /*stuff*/
+    .new-stuff {width: 100%;}
+    .stuff-header {width: 100%; display: flex; align-items: center;}
+    .stuff-header h2 {background-color: #CBCBCB; width: 50.3125rem; font-size: 2.25rem; padding: 1rem 1rem 1rem 5rem;}
+    .stuff-header > a{font-size: 1.5rem; padding-left: 4rem; text-decoration: none;}
+
+    .stuff {width: 26.5rem; display: flex; flex-direction: row; align-items: flex-end;}   
+    
+    .stuff-box {margin: 3.25rem 4rem 3.25rem 4rem; display:flex; flex-wrap: wrap; justify-content: space-between;}
+    .stuff > .image {width: 100%;}
+
+    .stuff:hover .stuff-info {opacity: 1; transition: 0.5s;}   
+    .stuff .stuff-info 
+    {
+        opacity:1;
+        transition: 0.5s;
+        flex-direction: column;
+        background-color: #525252c5;
+        padding: 1rem;
+        position: absolute;
+        width: 26.5rem;
     }
+    .stuff > .stuff-info span {color: white;}
+    .stuff > .stuff-info > * > * {color: white;}
+    .stuff > .stuff-info > .divv {width: 100%; display: flex; justify-content: space-between; font-size: 0.875rem;}
+    .stuff > .stuff-info > h2 {font-size: 1.5rem; font-weight: bold; display: flex; justify-content: space-between;}
+
+    .full-info {display: none; color:white;}
+    .stuff:hover .stuff-info .full-info
+    {display: block; transition: 0.5s;}
+    .full-info > .button {background-color: white; color:black; width: 9rem;}
+    .heart {position: absolute;  width:2.0625rem; margin: 0 0 34.3rem 23rem;}
+
+    /*about*/
+    .about {width:100%; height: 59.0625rem; background-color: #CBCBCB; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
+    .about > h2 {font-size: 2rem; font-family: 'Roboto'; font-weight: 500; color: black;}
+    .about > .content {width: 91.8125rem; display: flex; flex-direction: row; justify-content: flex-start;}
+    .about > .content > .info-box
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #F0F0F0;
+        width: 54.5rem;
+        height: 20.1875rem;
+        margin: 1.5rem 0 0 36.5rem;
+        padding: 1.5rem;
+        filter: drop-shadow(1.3rem 0rem 0rem #525252);
+    }
+    .about > .content > .info-box > h2 {font-size: 1.5rem;}
+    .about > .content > .info-box > p {font-size: 1.5rem;}
+
+    .podpiska {width: 100%; height: 31rem; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    .podpiska  h1 {font-size: 4rem; font-weight: bold; color: black;}
+    .podpiska  p {font-size: 2rem; margin-top: 4.94rem;}
+    .podpisoch {width: 63.5625rem; display: flex; justify-content: space-between; margin-top: 2rem;}
+    .grey-podpis {width: 39.375rem; height: 3.75rem; background-color: #F0F0F0; display: flex; align-items: center; font-size: 1.125rem; padding-left: 1.5rem;}
+    .podpis-button {width: 18.75rem; height: 3.75rem; background-color: #525252; font-size: 1.125rem; font-weight: 500; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer;}
+
+    footer {width: 100%; display: flex; flex-direction: column;}
+    .footer1 {width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; padding: 2.5rem 0 2.5rem 0; background-color: #F0F0F0;}
+    .stolb {display: flex; flex-direction: column; flex-wrap: nowrap;}
+    .stolb a {text-decoration: none; font-size: 0.875rem; margin-bottom: 0.75rem;}
+    .footer2 {width: 100%; background-color: #D3D3D3; display: flex; justify-content: space-between; align-items: center; height: 4.375rem; padding: 0 5rem;}
+
 }
 

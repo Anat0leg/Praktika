@@ -41,8 +41,9 @@ html{scroll-behavior: smooth;}
         text-decoration: none;
         
     }
-    header .top .left a {margin-right: 2rem;}
-    header .top .left a img, header .top .right a img  {margin-right: 1rem; width: 1rem;}
+    header > .top > .left > a {margin-right: 2rem;}
+    header > .top > .left > a > img, header > .top > .right > a > img  {margin-right: 1rem; width: 1rem;}
+    .left-mobile {display: none;}
 
     header > .middle 
     {
@@ -116,7 +117,7 @@ html{scroll-behavior: smooth;}
     }
     .video-image {width: 100%;}
     #play0 {display: block; position: absolute; width: 12.5rem; cursor: pointer;}
-
+    .mobile-stories {display: none;}
     .separation
     {
         margin: 3.125rem 0 3.125rem 0;
@@ -173,16 +174,15 @@ html{scroll-behavior: smooth;}
     .sale > .sale-info > h2 {font-size: 1.5rem; font-weight: bold;}
 
     /*stuff*/
-
     .new-stuff {width: 100%;}
     .stuff-header {width: 100%; display: flex; align-items: center;}
     .stuff-header h2 {background-color: #CBCBCB; width: 50.3125rem; font-size: 2.25rem; padding: 1rem 1rem 1rem 5rem;}
     .stuff-header > a{font-size: 1.5rem; padding-left: 4rem; text-decoration: none;}
 
-    .stuff {width: 26.5rem; display: flex; align-items: flex-end;}   
+    .stuff {width: 26.5rem; display: flex; flex-direction: row; align-items: flex-end;}   
     
     .stuff-box {margin: 3.25rem 4rem 3.25rem 4rem; display:flex; flex-wrap: wrap; justify-content: space-between;}
-    .stuff > img {width: 100%;}
+    .stuff > .image {width: 100%;}
 
     .stuff:hover .stuff-info {opacity: 1; transition: 0.5s;}   
     .stuff .stuff-info 
@@ -204,4 +204,39 @@ html{scroll-behavior: smooth;}
     .stuff:hover .stuff-info .full-info
     {display: block; transition: 0.5s;}
     .full-info > .button {background-color: white; color:black; width: 9rem;}
+    .heart {position: absolute;  width:2.0625rem; margin: 0 0 34.3rem 23rem;}
+
+    /*about*/
+    .about {width:100%; height: 59.0625rem; background-color: #CBCBCB; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
+    .about > h2 {font-size: 2rem; font-family: 'Roboto'; font-weight: 500; color: black;}
+    .about > .content {width: 91.8125rem; display: flex; flex-direction: row; justify-content: flex-start;}
+    .about > .content > .info-box
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #F0F0F0;
+        width: 54.5rem;
+        height: 20.1875rem;
+        margin: 1.5rem 0 0 36.5rem;
+        padding: 1.5rem;
+        filter: drop-shadow(1.3rem 0rem 0rem #525252);
+    }
+    .about > .content > .info-box > h2 {font-size: 1.5rem;}
+    .about > .content > .info-box > p {font-size: 1.5rem;}
+
+    .podpiska {width: 100%; height: 31rem; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    .podpiska  h1 {font-size: 4rem; font-weight: bold; color: black;}
+    .podpiska  p {font-size: 2rem; margin-top: 4.94rem;}
+    .podpisoch {width: 63.5625rem; display: flex; justify-content: space-between; margin-top: 2rem;}
+    .grey-podpis {width: 39.375rem; height: 3.75rem; background-color: #F0F0F0; display: flex; align-items: center; font-size: 1.125rem; padding-left: 1.5rem;}
+    .podpis-button {width: 18.75rem; height: 3.75rem; background-color: #525252; font-size: 1.125rem; font-weight: 500; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer;}
+
+    footer {width: 100%; display: flex; flex-direction: column;}
+    .footer1 {width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; padding: 2.5rem 0 2.5rem 0; background-color: #F0F0F0;}
+    .stolb {display: flex; flex-direction: column; flex-wrap: nowrap;}
+    .stolb a {text-decoration: none; font-size: 0.875rem; margin-bottom: 0.75rem;}
+    .footer2 {width: 100%; background-color: #D3D3D3; display: flex; justify-content: space-between; align-items: center; height: 4.375rem; padding: 0 5rem;}
+
 }
